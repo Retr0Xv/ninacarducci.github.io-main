@@ -68,21 +68,39 @@
 		  ]
 		}
 	  </script>
+	  <script src="./assets/code/js/ninaNavbar.js" async defer></script>
   
 </head>
 <body>
-<div class="top-header">
-	<h3 class="name">Nina Carducci</h3>
-	<div class="nav">   
-		<ul>
-			<li><a href="#about">À propos</a></li>
-			<li><a href="#gallery">Galerie</a></li>
-			<li><a href="#services">Service</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/images/icons/instagram.png" alt="Bouton instagram"></a></li>
-		</ul>
-	</div>
-</div>
+	<header class="top-header bg-white">
+		<nav class="navbar navbar-expand-md">
+		  <div class="container-fluid top-header-navbar">
+			<h1><a href="#" class="trigger-navbar-collapse-onclick">Nina Carducci</a></h1>
+			<button
+			  aria-label="Bouton de la barre de navigation"
+			  class="navbar-toggler"
+			  type="button"
+			  data-bs-toggle="collapse"
+			  data-bs-target=".navbar-menu"
+			>
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse navbar-menu" id="navbar-hamburger-killswitch" style="width: 100%">
+			  <ul class="navbar-nav ms-auto">
+				<li class="nav-item"><a class="nav-link" href="#a-propos">À propos</a></li>
+				<li class="nav-item"><a class="nav-link" href="#galerie">Galerie</a></li>
+				<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+				<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+				<li class="nav-item">
+				  <a class="social-link" href="https://www.instagram.com/ninacarducci.photo" target="_blank"
+					><img src="./assets/images/icons/instagram.png" alt="Bouton instagram" width="21" height="21"
+				  /></a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	  </header>
 <div id="header">
 
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -150,8 +168,8 @@
           </picture>
 	</div>
 	<div id="about-me">
-		<h3 class="about-me__title">A propos de moi</h3>
-		<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+		<h2 class="about-me__title">A propos de moi</h2>
+		<h3 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h3>
 		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
@@ -181,7 +199,7 @@
 	</div>
 </div>
 <div id="services">
-	<h3 class="title">Mes services</h3>
+	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
@@ -241,7 +259,7 @@
 			  </form>
 		</div>
 		<div class="picture right">
-			<img src="./assets/images/desktop/etc/camera.webp">
+			<img src="./assets/images/desktop/etc/camera.webp" alt="appareil-photo">
 		</div>
 	</div>
 </div>
