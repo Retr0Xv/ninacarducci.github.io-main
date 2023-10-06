@@ -141,9 +141,9 @@ h4 {
 
 .title {
 	text-align: center;
-	padding-block: 2em;
-	font-weight: 400;
-	font-size: 1.7em;
+    font-weight: 400;
+    font-size: 1.7em;
+    margin-bottom: 0px;
 }
 
 .gallery .nav {
